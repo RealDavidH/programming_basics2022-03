@@ -1,0 +1,6 @@
+Snip 1:
+Console will log: [ 'Paula', 'Smith', '1234 Main Street', 'St. Louis', 'MO', 12345 ]
+Snip 2:
+Console will log: ["broccoli", "ice cream", "hash brown"]
+Snip 3:
+Console will log: ["Bambi", "Beetle-juice", "Toy story", "Zoro"]

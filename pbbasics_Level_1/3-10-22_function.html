@@ -1,0 +1,98 @@
+<html>
+    <style type="text/css">
+        table, th, td {
+        text-align: center;
+        margin: auto;
+    }
+    body {
+        background-color: antiquewhite;
+    }
+    </style>
+<head>
+<table style="margin: auto; text-align: center; color: aqua;">
+    <div class='table'><table border="1px"></div>
+    <thead>
+        <td rowspan="2">
+            <div style="float: inherit;">Numbers being counted:</div>
+            <div>1 to 255</div>
+        </td>
+        <td>
+            Sum of all the numbers:
+        </td>
+    </thead>
+    <tbody style="margin: auto; text-align: center;">
+        <td style="margin: auto; text-align: center;">
+            <p id="num"></p>
+        </td>
+        <td style="margin: auto; text-align: center;">
+            <p id="result"></p>
+        </td>
+    </tbody>
+</table>
+</head>
+<body>
+    <h4 style="margin: auto; text-align: center;";>
+        Calculate your own!
+    </h4>
+<table style="margin: auto; text-align: center;">
+    <div class='table'><table border="1px"></div>
+    <thead>
+        <td rowspan="2">
+            <div style="float: inherit;">Numbers being counted:</div>
+                    <div style="text-align: center; float: left;"><input type="number" id="number1" placeholder="ex: 1"></div>
+                    <div style="float: center;">to</div>
+                    <div style="text-align: center; float: right;"><input type="number" id="number2" placeholder="ex: 10"></div>
+        </td>
+        <td>
+            Sum of all numbers:
+        </td>
+    </thead>
+    <tbody>
+        <td>
+            <p id="num1"></p>
+        </td>
+        <td>
+            <p id="results"></p>
+        </td>
+    </tbody>
+</table>
+    <div style="text-align: center;"><input type="button" onclick="printsIntsAndSum()" value="Count"></div>
+<script>
+function printsIntsAndSum(){
+        var sum = 0;
+        console.log(sum);
+        for(var i = parseInt(document.getElementById('number1').value); i <= parseInt(document.getElementById('number2').value); i++){
+            sum = sum + i; 
+            console.log(i, 'i');
+            console.log(sum, 'sum');
+            if(i == parseInt(document.getElementById('number2').value)) {
+                document.getElementById("num1").innerHTML += i;
+            }
+            else {
+            document.getElementById("num1").innerHTML += i +', ';
+            }
+            
+        }
+        document.getElementById("results").innerHTML = sum;
+}
+</script>
+<script>
+    var sum = 0;
+    console.log(sum);
+    for(var i = 1; i <= 255; i++){
+        sum = sum + i; 
+        console.log(i, 'i');
+        console.log(sum, 'sum');
+        if(i == 255) {
+            document.getElementById("num").innerHTML += i;
+        }
+        else {
+        document.getElementById("num").innerHTML += i +', ';
+        }
+        
+    }
+    document.getElementById("result").innerHTML = sum;
+</script>
+</body>
+</html>
+

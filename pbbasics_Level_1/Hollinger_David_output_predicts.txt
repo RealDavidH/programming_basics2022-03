@@ -1,0 +1,6 @@
+Chal 1;
+Console would log: "Never, Going, To, Give, You, Up" //It's 2022 and I'm still getting rick rolled ):
+Chal 2:
+Console would log: "2, 2, 4, 6 , 6, 12, 8, 20, 10 ,30"
+Chal 3:
+Console would log: "true, true, true"

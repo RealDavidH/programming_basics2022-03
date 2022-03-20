@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <p style="text-align: center; margin: auto; font-size: 20px;">Input your name and get started!</p>
+        <h1>
+            <div style="text-align: center; margin: auto;"><input type="text" id="name" placeholder="Bussin Barry"></div>
+            <div style="text-align: center;"><input type="button" onclick="greeting()" value="Start"></div>
+            <p id="output" style="margin: auto; text-align: center;"></p>
+        </h1>
+    </head>
+<script>
+
+const d = new Date();
+let date = d.getMonth()+1+'/'+d.getDate()+'/'+d.getFullYear();
+let hour = d.getHours();
+let min = d.getMinutes();
+
+function regularTime(){
+    var hour = d.getHours();
+    if(hour=13){
+        hour = 1;
+    }
+    else if(hour=14){
+        hour = 2;
+    }
+    else if(hour=15){
+        hour = 3;
+    }
+    else if(hour=16){
+        hour = 4;
+    }
+    else if(hour=17){
+        hour = 5;
+    }
+    else if(hour=18){
+        hour = 6;
+    }
+    else if(hour=19){
+        hour = 7;
+    }
+    else if(hour=20){
+        hour = 8;
+    }
+    else if(hour=21){
+        hour = 9;
+    }
+    else if(hour=22){
+        hour = 10;
+    }
+    else if(hour=23) {
+        hour = 11;
+    }
+    return hour;
+}
+
+
+
+function greeting(){
+    var name = document.getElementById("name").value;
+    var hours = regularTime();
+    //console.log(hours);
+    var min = d.getMinutes();
+    //console.log(min);
+    if(name == 'Count Dooku'){
+        document.getElementById("output").innerHTML += "I'm coming for you Dooku!"
+    }
+    else if(hour >= 16){
+        hours = hours + 5;
+        if(min < 10){
+        document.getElementById("output").innerHTML += 'Good evening, '+name+'! '+'It is currently: '+hours+':'+'0'+min+' p.m.';
+        }
+        else{
+            document.getElementById("output").innerHTML += 'Good evening, '+name+'! '+'It is currently: '+hours+':'+min+' p.m.';
+        }
+    }
+    else if(hour >= 12 && hours <= 16){
+        if(min < 10){
+        document.getElementById("output").innerHTML += 'Good afternoon, '+name+'! '+'It is currently: '+hours+':'+'0'+min+' p.m.';
+        }
+        else{
+            document.getElementById("output").innerHTML += 'Good afternoon, '+name+'! '+'It is currently: '+hours+':'+min+' p.m.';
+        }
+    }
+    else if (hour < 12){
+        hours = hours + 8;
+        if(min < 10){
+        document.getElementById("output").innerHTML += 'Good morning, '+name+'! '+'It is currently: '+hours+':'+'0'+min+'am';
+        }
+        else{
+            document.getElementById("output").innerHTML += 'Good morning, '+name+'! '+'It is currently: '+hours+':'+min+'am';
+        }
+    }
+}
+</script>
+</html>

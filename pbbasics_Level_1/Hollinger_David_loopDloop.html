@@ -1,0 +1,50 @@
+<html>
+    <style type="text/css">
+        body{
+            background-color: antiquewhite;
+        }
+    </style>
+    <head>
+        <h1 style="margin: auto; text-align: center;">
+            Run for candy!
+        </h1>
+        <div style="text-align: center; margin: auto;"><input type="number" id="speed" placeholder="ex: 5"></div>
+        <p style="text-align: center; margin: auto; outline: auto; font-size: 20px;">
+            | You will be running 6 miles. Every 2 miles you will be getting candy. Please input the speed you will be running, in MPH, to determine if you will get candy! |
+        </p>
+        <div style="text-align: center;"><input type="button" onclick="calculate()" value="test"></div>
+    </head>
+<body>
+    <div id="1" style="margin: auto; text-align: center; font-size: 25px; color: black;"></div>
+    <div id="2" style="margin: auto; text-align: center; font-size: 25px; color: black;"></div>
+    <div id="3" style="margin: auto; text-align: center; font-size: 25px; color: black;"></div>
+    <div id="4" style="margin: auto; text-align: center; font-size: 25px; color: black;"></div>
+    <div id="5" style="margin: auto; text-align: center; font-size: 25px; color: black;"></div>
+    <div id="6" style="margin: auto; text-align: center; font-size: 25px; color: black;"></div>
+    <div id="7" style="margin: auto; text-align: center; font-size: 25px; color: black;"></div>
+</body>
+<script>
+
+
+function calculate(){
+    var num = 0;
+    var mile = 0 ;
+    var speed = document.getElementById("speed").value;
+
+    for(mile; mile <= 6; mile++){
+        num++;
+        if(mile > 0){
+            document.getElementById(num).innerHTML += "Mile: " +mile + ". ";
+            if(mile%2 === 0 && speed > 5.5){
+                document.getElementById(num).innerHTML += "Here's a candy for running fast! ";
+            }
+            else if(mile%2 === 0 && speed < 5.5){
+                document.getElementById(num).innerHTML += "Run faster to earn your candy! ";
+            }
+        }
+    }
+}
+</script>
+
+
+</html>

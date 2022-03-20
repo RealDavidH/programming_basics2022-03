@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <title>David Hollinger</title>
+</head>
+<body>
+    <h1>DAVID HOLLINGER IS MY NAME</h1>
+    <h6>DAVID HOLLINGER BUT SMALLER</h6>
+    <a href="https://github.com/RealDavidH">This is my Git Hub</a>
+    <p>This is 1 tag</p>
+    <img style="width: 200px; height: 200px" src="Stitch.jpg" alt="Bird with wings" />
+    <p>This is 2 tags</p>
+    <p>This is 3 tags</p>
+    <ol>
+        <li>This is an ordered list.</li>
+    </ol>
+    <ul>
+        <li>This is an unordered list</li>
+    </ul>
+    <table border="1px">
+        <tr>
+            <td>Row</td>
+            <td>Row</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Your boat</td>
+            <td>Gently</td>
+            <td>Down the stream.</td>
+        </tr>
+    </table>
+    <form action="mailto:lolsandwich09@gmail.com?cc=secondemail@example.com, anotheremail@example.com, &bcc=lastemail@example.com&subject=Mail from our Website&body=Dear W3docs Team"></a>
+        <address></address>
+        <label for="email" style="font-size: 30px"> Email Me!</label><br/>
+        <p>Enter your email, and leave a comment!</p>
+        <div class="email_input">
+            <input type="email" id="email" placeholder="Your Email Address"/>
+        </div>
+        <textarea id="comment" name="comment" placeholder="Write something.." style="height: 200px"></textarea><br>
+        <input type="button" onclick="button1()" value="Submit"/>
+    </form>
+    <script>
+        let emailAndComment = [];
+        function button1() {
+            let email = "email: " + document.getElementById("email").value;
+            let comment = "comment: " + document.getElementById("comment").value;
+            let temp = [];
+            toString(email, comment);
+            temp.push(email, comment);
+            emailAndComment.push(temp);
+            console.log(emailAndComment);
+        }
+    </script>
+</body>
+</html>

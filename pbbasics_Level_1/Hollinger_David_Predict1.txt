@@ -1,0 +1,6 @@
+q1:
+The console will log "I was born in 1980"
+q2:
+The console will log "I was born in 1980"
+q3:
+The console will log "Summing Numbers!, num1 is: 10, num2 is: 20, 

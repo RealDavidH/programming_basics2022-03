@@ -1,0 +1,17 @@
+load duck                                     
+travel with duck to second side
+unload duck
+travel back to first side
+load veggies
+travel with veggies to second side 
+unload veggies
+load duck
+travel back to first side with duck
+unload duck
+load wolf
+travel with wolf to second side
+unload wolf
+travel back to first side
+load duck 
+travel to second side with duck
+unload duck

@@ -1,0 +1,36 @@
+1. Chris uses rock three times, scissors six times, and paper once.
+2. Narcisocisoiso uses rock twice, scissors four times, and paper four times.
+3. There are no ties in all 10 games.
+4. The order of games is unknown.
+
+P = Paper, R = Rock, and S = Scissors
+
+
+Chris: uses R 3 times, S 6 times, and P 1 time
+Narciso: uses R 2 times, S 4 times, and P 4 times
+
+Elimination method
+
+Chris has 6 Scissors. Narciso has 4 Papers. 6-4 = 2
+Chris now has 4 wins.
+
+Chris: uses R 3 times, S 2 times, and P 1 time
+Narciso: uses R 2 times, S 4 times, and P 0 times
+
+Chris has 2 Scissors. Narciso has 2 Rock. 2-2 = 0
+Narciso now has 2 wins.
+
+Chris: uses R 3 times, S 0 times, and P 1 time
+Narciso: uses R 0 times, S 4 times, and P 0 times
+
+Chris has 3 Rock. Narciso has 4 Scissors. 4-3 = 1
+Chris now has (3+4) 7 wins.
+
+Chris: uses R 0 times, S 0 times, and P 1 time
+Narciso: uses R 0 times, S 1 times, and P 0 times
+
+Chris has 1 Scissors. Narciso has 1 paper. 1-1 = 0
+Narciso now has (2+1) 3 wins.
+
+Chris has: 7 wins.
+Narciso has: 3 wins.
